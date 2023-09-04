@@ -1,12 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Document</title>
-</head>
-<body>
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap');
 
-</body>
-</html>
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.slider__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 50rem;
+  padding: 2rem 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.slide__item {
+  display: block;
+  width: 50rem;
+  border-radius: 1rem;
+}
+
+.slider__bottom {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider__controls {
+  width: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0.1rem;
+}
+
+.dot__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+}
+
+.controls__dot {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 0.12rem solid #0011ff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot__wrapper:hover .controls__dot {
+  background-color: #6570ff;
+}
+
+.dot__wrapper:active .controls__dot {
+  background-color: #000ed8;
+}
+
+.slider__text {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.fake__input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.text__item {
+  font-size: 2rem;
+  display: inline-block;
+  width: calc(100% + 6.86875rem);
+}
+
+#meme1:checked
+  ~ .slider__container
+  > .slider__bottom
+  > .slider__controls
+  > .dot__wrapper:nth-child(1)
+  > .controls__dot,
+#meme2:checked
+  ~ .slider__container
+  > .slider__bottom
+  > .slider__controls
+  > .dot__wrapper:nth-child(2)
+  > .controls__dot,
+#meme3:checked
+  ~ .slider__container
+  > .slider__bottom
+  > .slider__controls
+  > .dot__wrapper:nth-child(3)
+  > .controls__dot,
+#meme4:checked
+  ~ .slider__container
+  > .slider__bottom
+  > .slider__controls
+  > .dot__wrapper:nth-child(4)
+  > .controls__dot,
+#meme5:checked
+  ~ .slider__container
+  > .slider__bottom
+  > .slider__controls
+  > .dot__wrapper:nth-child(5)
+  > .controls__dot {
+  background-color: #000ed8;
+  border: 0.1rem solid #000ed8;
+}

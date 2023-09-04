@@ -3,7 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <input class="fake__input" type="radio" name="meme" id="meme1" checked />
+      <input class="fake__input" type="radio" name="meme" id="meme2" />
+      <input class="fake__input" type="radio" name="meme" id="meme3" />
+      <input class="fake__input" type="radio" name="meme" id="meme4" />
+      <input class="fake__input" type="radio" name="meme" id="meme5" />
+
+      <div class="slider__container">
+        <div class="slides">
+          <img src="./assets/Barney-and-Marshall.jpg" class="slide__item" />
+          <img src="./assets/How-I-met-your-mother-meme.jpg" class="slide__item" />
+          <img src="./assets/Marshall-and-lily.jpg" class="slide__item" />
+          <img src="./assets/Marshall-Eriksen-Pointing.jpg" class="slide__item" />
+          <img src="./assets/Marshall-Eriksen.jpg" class="slide__item" />
+        </div>
+
+        <div class="slider__bottom">
+          <div class="slider__controls">
+            <div class="dot__wrapper">
+              <label for="meme1" class="controls__dot"></label>
+            </div>
+            <div class="dot__wrapper">
+              <label for="meme2" class="controls__dot"></label>
+            </div>
+            <div class="dot__wrapper">
+              <label for="meme3" class="controls__dot"></label>
+            </div>
+            <div class="dot__wrapper">
+              <label for="meme4" class="controls__dot"></label>
+            </div>
+            <div class="dot__wrapper">
+              <label for="meme5" class="controls__dot"></label>
+            </div>
+          </div>
+
+          <div class="slider__text">
+            <span class="text__item">Trending on instagram before instagram</span>
+            <span class="text__item">Not good enough for judge fudge</span>
+            <span class="text__item">Gouda?</span>
+            <span class="text__item">When someone says "Nessie isn't real"</span>
+            <span class="text__item">Getting ready... for cat funeral</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

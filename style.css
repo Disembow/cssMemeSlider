@@ -4,6 +4,7 @@
 
 :root {
   --text-sliding-distance: -114.6%;
+  --text-sliding-distance: -125%;
   --main-controls-bg-color: #000ed8;
   --main-controls-bg-color-hover: #6570ff;
 }
@@ -41,8 +42,9 @@ body {
 }
 
 .slide__item {
-  display: block;
   max-width: 50rem;
+  width: 100%;
+  height: auto;
   border-radius: 1rem;
 }
 
@@ -93,8 +95,9 @@ body {
 
 .text_container {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 2rem;
 }
 
 .text__item {
@@ -164,26 +167,26 @@ body {
 }
 
 #meme1:checked ~ .slider__container > .slider__bottom > .slider__text > .text_container {
-  transform: translateX(calc(var(--text-sliding-distance) * 0));
+  transform: translateY(calc(var(--text-sliding-distance) * 0));
   transition: transform 0.3s;
 }
 
 #meme2:checked ~ .slider__container > .slider__bottom > .slider__text > .text_container {
-  transform: translateX(calc(var(--text-sliding-distance) * 1));
+  transform: translateY(calc(var(--text-sliding-distance) * 1));
   transition: transform 0.3s;
 }
 
 #meme3:checked ~ .slider__container > .slider__bottom > .slider__text > .text_container {
-  transform: translateX(calc(var(--text-sliding-distance) * 2));
+  transform: translateY(calc(var(--text-sliding-distance) * 2));
   transition: transform 0.3s;
 }
 
 #meme4:checked ~ .slider__container > .slider__bottom > .slider__text > .text_container {
-  transform: translateX(calc(var(--text-sliding-distance) * 3));
+  transform: translateY(calc(var(--text-sliding-distance) * 3));
   transition: transform 0.3s;
 }
 
 #meme5:checked ~ .slider__container > .slider__bottom > .slider__text > .text_container {
-  transform: translateX(calc(var(--text-sliding-distance) * 4));
+  transform: translateY(calc(var(--text-sliding-distance) * 4));
   transition: transform 0.3s;
 }

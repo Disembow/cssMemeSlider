@@ -5,14 +5,19 @@
 :root {
   --text-sliding-distance: -114.6%;
   --text-sliding-distance: -125%;
-  --main-controls-bg-color: #000ed8;
-  --main-controls-bg-color-hover: #6570ff;
+  --main-controls-bg-color: #ffffff;
+  --main-controls-bg-color-hover: #bdbdbd;
+  --main-text-color: #ffffff;
 }
 
 /* Slider layout styles */
 
 body {
   font-family: 'Josefin Sans', sans-serif;
+  background-image: url('./assets/background-image.jpg');
+  background-repeat: repeat;
+  background-position: center center;
+  color: var(--main-text-color);
 }
 
 .wrapper {
@@ -54,6 +59,7 @@ body {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
+  padding: 0.5rem;
 }
 
 .slider__controls {

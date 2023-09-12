@@ -98,6 +98,39 @@ body {
   background-color: var(--main-controls-bg-color);
 }
 
+#meme1:checked
+  ~ .slider__container
+  > .slider__bottom
+  > .slider__controls
+  > .dot__wrapper:nth-child(1):hover
+  > .controls__dot,
+  #meme2:checked
+  ~ .slider__container
+  > .slider__bottom
+  > .slider__controls
+  > .dot__wrapper:nth-child(2):hover
+  > .controls__dot,
+  #meme3:checked
+  ~ .slider__container
+  > .slider__bottom
+  > .slider__controls
+  > .dot__wrapper:nth-child(3):hover
+  > .controls__dot,
+  #meme4:checked
+  ~ .slider__container
+  > .slider__bottom
+  > .slider__controls
+  > .dot__wrapper:nth-child(4):hover
+  > .controls__dot,
+  #meme5:checked
+  ~ .slider__container
+  > .slider__bottom
+  > .slider__controls
+  > .dot__wrapper:nth-child(5):hover
+  > .controls__dot {
+  background-color: var(--main-controls-bg-color-hover);
+}
+
 .slider__text {
   overflow: hidden;
 }
@@ -124,7 +157,6 @@ body {
   .text__item {
     font-size: 1.4rem;
     line-height: 2rem;
-    text-align: center;
   }
 }
 
